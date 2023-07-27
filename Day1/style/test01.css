@@ -40,10 +40,9 @@ img{
 
 table{
     width: 750px;
-    border-collapse: collapse;
 }
 
 tr ,td,th{
-    border: 1.5px solid green;
+    border: 2px solid green;
 }
 
