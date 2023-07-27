@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html lang="kor">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=dl, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href=".\style\test01.css">
+    <style>
+        div.line{
+            width: 200px;
+            height: 1px;
+            background-color: palegreen;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            welcome! this is menu bar
-            <ul>
-                <li><a href="list-1">list1</a></li>
-                <li><a href="list-2">list2</a></li>
-                <li><a href="list-3">list3</a></li>
-                <li><a href="list-4">list4</a></li>
-                <li><a href="list-5">list5</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        hello this is my page.
-    </section>
+    <dl>
+        <dt>제목</dt>
+        <dd>java</dd>
+        <dt>저자</dt>
+        <dd>홍길동</dd>
+        <dt>가격</dt>
+        <dd>100만원</dd>
+    </dl>
+    <hr>
+    <div class="line"></div> <!--div로 선을 쓴다.-->
+
+
+
+
+    <div id="area1">div area</div>
+    <span id="area2">test</span>
 </body>
 </html>
