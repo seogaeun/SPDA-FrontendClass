@@ -1,16 +1,21 @@
-ul li a{
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: purple;
-    color: white;
-    margin-right: 10px;
-    text-decoration: none;
-}
-ul li{
-    display: inline-block;
-    list-style: none;
+/* id는 # class . */
+
+#area1{
+background-color: rgb(120, 120, 137);
+
 }
 
-nav{
-    background-color: aqua;
+#area2{
+    background-color: red;
+    
+}
+
+div.line{
+    width: 200px;
+    height: 1px;
+    background-color: palegreen;
+}
+
+a{
+    color: violet;
 }
