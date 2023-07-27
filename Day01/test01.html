@@ -1,24 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!--DOCTYPE하는 순간 "HTML5 규칙을 적용했어" 라는 뜻-->
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=dl, initial-scale=1.0">
-    <title>Document</title>
+    <title>Panda W🐼rld</title>
     <link rel="stylesheet" href="./style/test01.css">
+    <style>
+        p{text-indent:10px;} /*들여쓰기 하는 방법. <br>에는 적용이 안된다는 점!*/
+
+        col.t{
+            background-color: yellowgreen;
+        }
+
+
+    </style>
 </head>
 <header>
-    welcome! 🐼🐼🐼🐼🐼
+    <h1>welc🐼me!</h1> 
 </header>
-<body>
+<body style="background-color: rgb(224, 245, 224);">
     <a href="https://img.sbs.co.kr/newimg/news/20210721/201573078.jpg">
-        <img src="panda.jpg" alt="판다판다">
+        <img src="./img/hipanda.jpg" alt="판다판다">
     </a>
 
+    <figure>
+        <img class="imgStyle" src="./img/tiredPanda.jpg" alt="panda1"> <!--대체 텍스트를 꼭 써주는게 좋다!-->
+        <img class="imgStyle" src="./img/hipanda.jpg" alt="panda2">
+        <img class="imgStyle" src="./img/panda.jpg" alt="panda3">
+        <figcaption>낮잠 자는 판다를 보며 낮잠 자고싶은 사람들의 모임</figcaption> <!--이미지에 캡션 넣는 figcaption-->
+    </figure>
+
     <dl>
-        <dt>제목</dt>
-        <dd>java</dd>
-        <dt>저자</dt>
-        <dd>홍길동</dd>
+        <dt>일시</dt>
+        <dd>2023-07-27</dd>
+        <dt>장소</dt>
+        <dd>Panda W🐼rld</dd>
         <dt>가격</dt>
         <dd>100만원</dd>
     </dl>
@@ -26,14 +42,76 @@
     <div class="line"></div> <!--div로 선을 쓴다.-->
 
     <!--영역 잡을 때 쓰는 것들-->
-    <div id="area1">div area</div>div는 공간 전체 차지
-    <span id="area2">test</span> <!--span은 글자 크기 만큼만-->
+    <div id="area1">많은 참여 바랍니다.</div><!--block div는 공간 전체 차지-->
+    <span id="area2">링크</span> <!--inline span은 글자 크기 만큼만-->
 
 
-    <a href="https://daum.net" title="네이버">다음으로</a>
-    <a href="https://naver.com" title="다음">네이버로</a>
+    <a href="https://daum.net" title="네이버"><b>다음으로</b></a>
+    <a href="https://naver.com" title="다음"><strong>네이버로</strong></a>
+    <p></p><!--한칸 들여쓰기 하고 싶을 때(문단에 대한 의미(?))-->
+    <a href="..\hello.html">옆 모임 넘어가기</a>
+    <br><!--단순히 그 다음으로 넘기는거(문단에 대한 의미가 아님)-->
+    <b>내용</b>이 <strong>강조</strong> <em>입니다.</em>
 
-    <a href="..\hello.html">옆 페이지 건너가기</a>
+    <p>판다를 보려고 에버랜드에 가려고 했는데 <small>평일에 갈 수 없으니</small> 주말엔 사람이 많아서 담에 가는 걸로...</p>
+    <!--이용 약관 같은 작은 글씨체들은 small로...-->
 
+    <hr>
+    <h2>News title</h2>
+    <p>경기도 용인 에버랜드 판다월드에 사는 자이언트 판다 ‘푸바오’의 신랑감으로 유력한 판다 ‘위안멍’이 프랑스에서 중국 청두 자이언트판다 번육연구기지로 돌아갈 예정이다.
+
+        25일(현지시간) 프랑스 보발 동물원과 중국 펑파이 신문에 따르면 프랑스에서 태어나 보발 동물원에서 살고 있는 위안멍이 중국으로 돌아가게 됐다. 중국과 프랑스간 판다 협력연구협의규정에 따른 것이다.</p>
+        
+    <p>    위안멍은 현지시간 기준 이날 오전 9시 사육사, 의료진 등과 함께 버스로 파리 샤를드골 공항으로 향한 후 같은 날 저녁 에어차이나 항공편에 탑승해 중국 청두로 이동한다.</p>
+    <p> 이에 앞서 전날 루사예 프랑스 주재 중국대사가 보발 동물원을 방문해 프랑스에서 마지막 밤을 보내는 위안멍을 찾기도 했다.
+        
+        현재 전 세계 동물원에 흩어져 있는 100여마리의 판다들은 대부분 중국에서 임대 형태로 공급된 판다들이다. 일명 ‘판다 외교’의 일환인데 이렇게 해외로 보내진 판다들은 4세가 되기 전 번식을 위해 중국으로 돌아가야 한다. 위안멍의 경우 당초 지난해 중국으로 향할 예정이었으나, 코로나19 확산이 이어지면서 반환 시기가 연기됐다.</p>
+    <hr>
+    <ul>
+        <li>🐼</li>
+        <li>판다</li>
+        <li><s>팬더</s></li>
+        <li><s>😎</s></li>
+    </ul>
+    <p>🖤My favoite color is <s>black</s> <ins>pink</ins>❤️</p>
+    <hr>
+    <h2>🐼🌿</h2>
+    <video src=".\source\pandaPlay.mp4" poster="./img/hipanda.jpg" width="80%" loop controls>
+        이 글씨가 보이는 걸 보아 당신 브라우저는 지원이 안될듯 합니다..
+    </video>
+    <!--poster는 재생 전후 띄울 사진-->
+    <hr>
+    <!--지금은 table 안쓴다!!! table이 편하다고 여기에 tag붙여서 화면 만드는거 안됨!-->
+    <!--도표 만들때나 table 씀...!!!-->
+    <table>
+        <caption>🌿Agust🌿</caption>
+
+        <!-- tr: → td:칸 만들기 -->
+        <thead>
+            <tr><th></th><th>Mon</th><th>Tue</th><th>Wen</th><th>Thur</th><th>Fri</th><th>Sat</th><th>Sun</th></tr>
+        </thead>
+        <tbody>
+            <tr><th>1</th><td>🌿</td><td>🐼</td><td>🐼</td><td>🐼</td><td>🐼</td><td>🌿</td><td>🌿</td></tr>
+            <tr><th>2</th><td>🐼</td><td>🐼</td><td>🐼</td><td>🐼</td><td>🐼</td><td>🌿</td><td>🌿</td></tr>
+            <tr><th>3</th><td>🐼</td><td>🌿</td><td>🐼</td><td>🐼</td><td>🐼</td><td>🌿</td><td>🌿</td></tr>
+            <tr><th>4</th><td>🐼</td><td>🐼</td><td>🐼</td><td>🐼</td><td>🐼</td><td>🌿</td><td>🌿</td></tr>
+        </tbody> 
+
+     </table>
+
+     <table>
+        <caption>학생 관리</caption>
+        <colgroup>
+            <col class="t">
+        
+        </colgroup>
+
+     </table>
 </body>
 </html>
+
+
+
+
+
+

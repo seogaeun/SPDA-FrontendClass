@@ -1,0 +1,62 @@
+.navUl>li{
+    display: inline-block;
+    list-style: none;
+}
+
+header{
+    background-color: aquamarine;
+}
+
+img{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+
+}
+
+.nav{
+    height: 70px;
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+}
+
+.aside{
+    background-color: skyblue;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.mainSection{
+    background-color: ivory;
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.miniSection{
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;    
+}
+
+.mini_subtitle{
+    color: salmon;
+}
+
+footer{
+    padding: 10px;
+    height: 60px;
+    border-radius: 10px;    
+    background-color: mintcream;
+}
+
+li{
+    margin-top: 30px;
+    margin-left: 15px;
+}

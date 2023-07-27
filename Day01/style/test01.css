@@ -1,5 +1,6 @@
 /* id는 # class . */
 
+
 #area1{
 background-color: rgb(120, 120, 137);
 
@@ -31,3 +32,18 @@ header{
 img{
     width: 100%;
 }
+
+.imgStyle{
+    width: 300px;
+    height: 150px;
+}
+
+table{
+    width: 750px;
+    border-collapse: collapse;
+}
+
+tr ,td,th{
+    border: 1.5px solid green;
+}
+
