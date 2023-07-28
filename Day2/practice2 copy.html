@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumentPlus</title>
+    <style>
+        ul li{
+            list-style-type: none;
+        }
+        .subtitle{
+            color:green
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>여름방학 특강 신청</h1>
+    </header>
+    <section>
+        <ul>
+            <li>
+                <fieldset>
+                    <legend>수강 신청인</legend>
+                    <label class="subtitle">학번</label>
+                    <input type="text" name="schnum" id="schnum">
+                    
+                    <label class="subtitle">이름</label>
+                    <input type="text" name="name" id="name">
+                    
+
+                    <label class="subtitle">학과</label>
+                    <select name="major" id="major">
+                        <option value="struct">건축공학과</option>
+                        <option value="com">컴퓨터공학과</option>
+                        <option value="edu">교육학과</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>수강 과목을 입력하세요</legend>
+                    <label class="subtitle">선호색상</label>
+                    <input type="color" name="" id="">
+
+                    <label class="subtitle"l class="subtitle">신청 과목 <small>(회화)</small></label>
+
+                    <input type="radio"  id="basic" name="class">
+                    <label for="basic">영어회화(초급)</label>
+
+                    <input type="radio"  id="mid" name="class">
+                    <label for="mid">영어회화(중급)</label>
+
+                    <input type="radio"  id="hard" name="class">
+                    <label for="hard">영어회화(고급)</label>
+
+                    
+                    <label class="subtitle">신청 과목 <small>(자격)</small></label>
+                    
+
+                    <input type="radio"  id="TOEIC" name="topic">
+                    <label for="TOEIC">TOEIC</label>
+
+                    <input type="radio"  id="TOEFL" name="topic">
+                    <label for="TOEFL">TOEFL</label>
+
+                    <input type="radio"  id="OPIC" name="topic">
+                    <label for="OPIC">OPIC</label>
+
+
+
+                    <label class="subtitle">관심 분야</label>
+                    <input type="text" name="cate" id="cate">
+                </fieldset>
+                <fieldset>
+                    <legend>강의 시간을 입력하세요</legend>
+                    <label class="subtitle">개강 주</label>
+                    <input type="date" name="openweek" id="openweek">
+                    <label class="subtitle">강의 시간</label>
+                    <input type="time" name="classtime" id="classtime">
+                </fieldset>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*콤마로도 연결 가능*/
+        div,p{
+            background-color: forestgreen;
+        }
+        input,span{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <!--블록 레벨이라 한줄 건너띄고 전체 차지-->
+    안녕하세요
+    <p>블록 레벨 테그는 한 줄을 다 차지합니다</p>
+    <hr>
+    <!--인라인이라 둘이 합방-->
+    안녕하세요
+    <input type="text" name="" id="" value="안녕하세요">
+    <div>
+        하하 저도 블록 레벨 태그
+    </div>
+    안녕하세요
+    <span>
+        전 인라인 레벨 태그라 제 범위만 차지합니다
+    </span>
+</body>
+</html>

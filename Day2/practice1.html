@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--post or get default는 get-->
+    <form method="get" action="" id="frm">
+        <label for="txtname">이름</label> <!--for은 name이 아닌 id와 연결됨-->
+        <input type="text" name="txtirum" id="txtname" required> 
+        <!--required 속성은 양식 제출 전에 사용자로부터 필수적인 정보를 입력받기 위해 유용하게 사용-->
+        <input type="submit" value="전송"> 
+        <button id="btn">전송</button> <!--submit과 동일한게 버튼(button)-->
+        <input type="image" src=".\source\sleepingpoo.jpg" alt="전송버튼">
+
+        <input type="text">
+        <input type="password">
+        <input type="radio">
+        <input type="checkbox">
+        <input type="date">
+        <input type="file">
+        <input type="email">
+        <input type="number" min=1 max=5>
+        <input type="range" min=1 max=5>
+
+        
+    </form>
+    <hr>
+    <form action="results" method="get">
+        <ul>
+            <li>
+                <h4>input-아이디 입력 창</h4>
+                <!--여기서 써먹는 이름은 id -->
+                <!--서버에 넘겨주는 이름이 name-->
+                <label for="id">아이디</label>
+                <input type="text" name="id" id="id" required
+                placeholder="아이디를 입력하세요" maxlength="5" 
+                readonly value="abcd">
+                <!--readonly하면 id고정, value에 값 넣어놓기 가능-->
+            </li>
+            <li>
+                <h4>input-비밀번호 입력 창</h4>
+                <label for="pwd">패스워드</label>
+                <input type="password" name="pwd" id="pwd" 
+                required maxlength="5" minlength="3" autofocus>
+                <!--autofocus 커서 깜박깜박-->
+            </li>
+            <li>
+                <h4>input-텍스트 입력 창</h4>
+                <label>이름</label>
+                <input type="text" name="name" id="named" size=3>
+                <!--이름 글자 -->
+            </li>
+            <li>
+                <h4>input-숨김처리</h4>
+                <input type="hidden" name="data" value="text">
+            </li>
+
+
+            <li>
+                <h4>input-radio 선택</h4>
+                <!--radio: 하나의 버튼만 선택 가능-->
+                <label>성별</label>
+                <label for="m">남자</label>
+                <input type="radio" value="남자" name="gender" id="m">
+                <label for="w">여자</label>
+                <input type="radio" value="여자" name="gender" id="w">
+                <hr>
+            </li>
+            <li>
+                <h4>fieldset-묶어주는 네모 박스</h4>
+                <fieldset> <!--묶어주기-->
+                    <legend>배고파</legend> <!--묶어준 곳 그룹-->
+                    <h4>input-체크박스 여러개 선택 가능</h4>
+                    <!--checkbox: 여러개 선택 가능-->
+                    <!--name은 똑같은 이름으로 잡아야 카테고리 그룹화 됨-->
+                    <label>분식</label>
+                    <label for="f1">떡볶이</label>
+                    <input type="checkbox" value="떡볶이" id="f1" name="favfood">
+                    <label for="f2">김말이</label>
+                    <input type="checkbox" value="김말이" id="f2" name="favfood">
+                    <label for="f3">오뎅</label>
+                    <input type="checkbox" value="오뎅" id="f3" name="favfood">
+                </fieldset>
+                <hr>
+            </li>
+            <li>
+                <h4>input-파일 첨부</h4>
+                <label for="">업로드 파일</label>
+                <input type="file" nane="file1" id="file1">
+                <hr>
+            </li>
+
+            <li>
+                <h4>input-이메일 형식</h4>
+
+                <!--입력한 이메일 형식 체크도 얘가 해줌-->
+                <label for="">이메일</label>
+                <input type="email" name="email1" id="email1" required>
+            </li>
+            <li>
+                <h4>input-전화번호 입력 창</h4>
+                <label for="">전화번호</label>
+                <input type="tel" name="myphone" id="myphone" required>
+            </li>
+            <li>
+                <h4>input-링크 입력 창</h4>
+
+                <label for="">사이트</label>
+                <input type="url" name="mypage" id="mypage" value="http://" required>
+                <hr>
+            
+            </li>
+
+            <li>
+                <h4>input-수량 입력 창</h4>
+                <label for="">수량</label>
+                <input type="number" name="" id="" min="0" max="100" step="0.01" value="0.1">
+            </li>
+            <li>
+                <h4>input-범위 입력 창</h4>
+                <label for="">범위</label>
+                <input type="range" name="number_range" id="number_range"
+                min="10" max="100" step="90" value="10">
+            </li>
+            <li>
+                <!--min과 max사이에만 날짜 선택이 가능하게끔~-->
+                <input type="date" min="2023-07-17" max="2023-10-20">
+                <hr>
+            </li>
+            <li>
+                <h4>select 목록 선택</h4>
+                <label for="Select">Select</label>
+                <!--카테고리 선택, 값은 value를 통해 보내기-->
+                
+                <!--select는 하나만 선택하는 거! size 목록 갯수-->
+                <!--multiple 선택시 드래그하면 여러개 선택 가능-->
+                <select name="select" id="select" size="10" multiple>
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                    <option value="d">d</option>
+                    <option value="e">e</option>
+                    <!--select에서 사용하는 옵션들을 묶어놓은 것-->
+                    <optgroup label="세부목록">
+                        <option value="sub1">sub-1</option>
+                        <option value="sub2">sub-2</option>
+                        <option value="sub3">sub-3</option>
+                        <option value="sub4">sub-4</option>
+
+                    </optgroup>
+                </select>
+            </li>
+            <li>
+                <label for="talk">하고싶은 말</label>
+                <!--textarea는 value에 값이 아닌 <></>사이에 집어넣으면 됨-->
+                <textarea name="talk" id="talk" row="4" cols="20">
+                    textarea는 사이에 집어넣으면 됨
+                </textarea>
+            </li>
+            <li>
+                <button type="submit" id="send">전송</button>
+                <input type="reset" value="취소">
+            </li>
+        </ul>
+
+    </form> 
+
+    <hr>
+
+    <form action="results" method="get">
+
+    </form>
+
+</body>
+</html>
+
