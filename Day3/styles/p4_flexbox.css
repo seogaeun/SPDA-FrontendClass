@@ -1,0 +1,53 @@
+.t{
+    border: 1px solid rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+}
+/*회사에서 gpt안쓰도록 노력해야함*/
+
+
+#wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /**/ 
+    /*flex-direction: 자료들의 배치 방향 column(열,세로) row(행,가로)*/
+    /*flex-direction: reverse 반대 배치*/
+    width: 100vw;
+    height: 100vh;
+    background-color: silver;
+    justify-content: space-evenly;
+    /*다 페어하게 일정하게 space-evenly*/
+    
+}
+
+
+div{
+    border:1px solid silver;
+}
+
+div.container{
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.d1{
+    width:100px; height: 100px;
+}
+
+duv.d1:nth-child(odd){
+    background-color: skyblue;
+    padding:20px 0px;
+
+}
+
+div.d1:nth-child(even){
+    background-color: pink;
+    height: 40px 0px;
+
+}
+
+
+
