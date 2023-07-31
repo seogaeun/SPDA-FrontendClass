@@ -1,0 +1,59 @@
+p{
+    background-color: thistle;
+    width: 300px;
+}
+
+p+div{ /*p바로 밑에 있는 div가 컨텍이 되어 얘가 바뀜*/
+    background-color:antiquewhite;
+    border: 1px solid palevioletred;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+div{
+    background-color: pink;
+    width: 100px;
+    border-radius: 10px;
+}
+
+a{
+    display: inline-block;
+    /*display:block*/
+    width: 300px;
+    border: 5px solid seashell;
+    height: 150px;
+    /*인라인을 블록으로*/
+    /*인라인은 width나 height를 인식하지 못하기에 
+        inline-block으로 바꿔서 위치 조정*/
+    background-color:blanchedalmond;
+    color:black;
+}
+
+/*id, class를 모든 element에다가 집어넣을 수는 없다!*/
+/*  dom구조를 생각해보자,  
+    하나를 선택하고 그 자료에서 연쇄적으로 찾는게 더 빠르기 쌔문에
+    class명으로 찾는 것보다 p+div이렇게 찾는게 빠름
+*/
+
+a:visited{ /*이 상태일 때는 active 무시*/
+    background-color:pink;
+    color:snow;
+}
+a:link{
+    background-color: hotpink ;
+    color: brown;
+}
+
+/*active는 클릭시 발생*/
+/*hover는 마우스 올릴 시 발생*/
+a:hover{ /*이 상태일 때는 active 무시*/
+    background-color:darksalmon;
+    color:snow;
+}
+a:active{
+    background-color: indianred;
+    color:snow;
+}
+
+

@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!--css 링크 연결-->
+    <!--스타일을 적용하는 방법1 css 링크 연결-->
+    <!--가장 태그가 윗쪽인 게 우선적으로 적용됨-->
     <link rel="stylesheet" href=".\style\practice4.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*스타일을 적용하는 방법2*/
+        /*상속 관계가 추가된것*/
+        @import url("style.css");
+        @import url("./style/practice4.css");
+
+    </style>
 </head>
 <body>
-    <div>안녕하세요</div>
+    <div>안녕<span>하세요</span></div>
 
     <div>안녕하세요</div>
+    
     
     <div>안녕하세요</div>
 </body>

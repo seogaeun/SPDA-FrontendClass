@@ -1,0 +1,12 @@
+*{ /*전체를 선택할 때 사용*/
+    color:tomato;
+    background: lightpink;
+
+}
+
+p.box{
+    width: 400px;
+    height: 300px;
+    border: 5px dashed salmon;
+
+}

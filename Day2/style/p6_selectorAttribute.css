@@ -1,0 +1,44 @@
+div{
+    width:100px;
+    height: 100px;
+    background: mistyrose;
+    border: 10px solid salmon;
+    margin-right: 10px;
+    float: left; /*왼쪽에 따따따따 붙음*/
+}
+
+div[title="h1 a1"]{ /*div중에서 title이 완전히 일치한 경우에만 적용*/
+    color: brown;
+    font-size: 15px;
+}
+
+div[title*="hello"]{ /*div중에서 포함 된 경우에만 적용*/
+    color: burlywood;
+    font-size: 15px;
+    text-align: center;
+}
+
+div.clear{
+    clear:both;
+}
+
+a{
+    display: inline-block;
+    width: 100px;
+}
+
+/*Q.com으로 끝나는 자료에 color:red*/
+a[href$=".com"]{
+    color:red;
+}
+
+/*Q.http로 시작되는 자료에 border 3px solid green*/
+a[href^="http"]{
+    border: 3px solid green;
+}
+
+a[value="신한투자증권"]{
+    background-color: darkblue;
+    font-size: 20px;
+}
+
