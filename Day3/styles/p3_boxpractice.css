@@ -1,0 +1,16 @@
+.menu-2 li a{
+    display: inline-block;
+    border:3px solid snow;
+    padding:20px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: skyblue;
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.menu-2 li{
+    display: inline-block;
+}
+

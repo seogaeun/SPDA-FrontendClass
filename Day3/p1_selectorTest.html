@@ -4,8 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /*first child 형제 element 중 첫 element
+            어떤 element에 상관없이 첫 자식
+        */
+
+        :first-child{ /*여기서 전체 중 first*/
+            border: 2px solid orange;
+        }
+
+        div:first-child{ /*여기서 전체 중 first child는 div이므로, 실행*/
+            border: 2px solid silver;
+        }
+
+        p:first-child{ /*여기서 전체 중 first child는 div이므로, p는 없어서 실행 안됨*/
+            border: 2px solid rgb(255, 0, 0);
+        }
+
+        p:first-of-type{ /*p태그들 중에서 첫번째 element를 선택함*/
+            background: greenyellow;
+        }
+
+        div:first-of-type{ /*div 태그들 중에서 첫번째 element를 선택함*/
+            background: green;
+        }
+
+
+        p:nth-child(1){ /*전체 element를 순서로 매겨서 적용하는거*/
+            background-color: aqua;
+        }
+
+        p:nth-child(2n){ /*전체 element를 순서로 매겨서 적용하는거
+            여기서 n을 집어넣어서 해당되는 위치 다 고르기 가능*/
+            background-color: aqua;
+        }
+
+        p:nth-of-type(2n){ /*특정 element를 순서로 매겨서 적용하는거
+            여기서 n을 집어넣어서 해당되는 위치 다 고르기 가능*/
+            border: 5px dashed slateblue;
+        }
+
+        div:nth-child(3n+1){ /*전체 element를 순서로 매겨서 적용하는거
+            여기서 n을 집어넣어서 해당되는 위치 다 고르기 가능
+            이때, 해당되는 위치에 있는게 div여야함*/
+            border: 5px dashed pink;
+        }
+
+
+        /*first of type 형제 element 중 n번째 element*/
+
+        /*selection*/
+
+
+        .test{
+            font-size: 20px;
+            color:indigo;
+            text-transform: capitalize;
+            text-decoration: underline; 
+            line-height: 100px; /*줄 간격 조절*/
+            letter-spacing: 10px; /*자간 조절*/
+            text-shadow: 5px 5px 5px darkblue,
+            3px 3px 3px purple,
+            5px 5px 5px aqua;
+        }
+
+        .shadow{
+            color:red;
+            font-size: 20px;
+            text-shadow: 5px 5px 5px darkblue;
+
+        }
+        #tb{
+            width: 800px;
+            height: 400px;
+        }
+        #tb td{
+            border: 1px solid silver;
+            text-align: center; /*텍스트 가로배치 조절*/
+            vertical-align: top;/*텍스트 세로배치 조절 얘는 p태그에서는 안쓰고
+            (p는 이거 말고 단락 조절로 사용) 주로 table set에서 쓰게 됨*/
+        }
+    </style>
 </head>
 <body>
-    
+    <!--형제 element-->
+    <div>div-1</div> <!--첫 번째 형제-->
+    <p>p-1</p>
+    <div>div-2</div>
+    <p>p-2</p>
+    <div>div-3</div>
+    <p>p-3</p>
+    <div>div-4</div>
+    <p>p-4</p>
+    <div class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Esse quod laudantium sint facilis, 
+        culpa maiores quidem expedita, incidunt cum molestias, 
+        enim repellendus porro quibusdam quis voluptatem veritatis sunt ullam! 
+        Magni.</div>
+    <div></div>
+    <div class="shadow">안녕하세요</div>
+
+    <table id="tb">
+        <tbody>
+            <tr>
+                <td>dfjskfhjklhgjkldflkghdsfl</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
