@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+div{
+    width: 200px;
+    height: 100px;
+    color: white;
+    background-color: purple;
+    box-shadow: 10px 10px 5px 5px #667;
+    margin-left:10px;
+    
+}

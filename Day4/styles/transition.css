@@ -1,0 +1,15 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+#trans{
+    transition-property: background-color,border-radius;
+    transition-duration: 3s, 5s;
+}
+
+#trans:hover{
+    background-color: red;
+    border-radius: 50px;
+}

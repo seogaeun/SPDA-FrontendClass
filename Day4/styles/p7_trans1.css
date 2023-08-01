@@ -1,0 +1,23 @@
+div{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid silver;
+    background-color: purple;
+    background-image: url(https://cdn.imweb.me/upload/S20221129c3c04fdc67a8b/09e904cb8f26f.png);
+    background-size: 100px;
+    color: white;
+    background-repeat: no-repeat;
+    transition-property: background-image,width,height;
+    transition-duration: 5s, 3s, 3s;
+}
+
+div:hover{
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    background-image: url(https://post-phinf.pstatic.net/MjAyMDEyMzFfMjI3/MDAxNjA5NDAyOTIwMzkx.8ijUCpAwMXNfXovokToG3OVIZtmtft2hXNHPZDjhwWAg.CgBivKtp5CFp_IpukbqcIV_-KFunwbP9AVg_N6cAjI0g.JPEG/%EA%B3%A0%EC%96%91%EC%9D%B4%EA%B0%80_%ED%99%94%EB%82%B4%EB%8A%94_%EC%9D%B4%EC%9C%A0_%EC%9B%90%EC%9D%B8_04.jpg?type=w800_q75);
+    background-repeat: no-repeat;
+    background-size: 280px;
+}
