@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0px;
+}
+body{
+
+    border:1px solid darkblue;
+    background-color: skyblue;
+}
+
+p{
+    border: 1px solid slateblue;
+    width: 100px;
+    height: 100px;
+}
+
+p.a1{
+    background-size: 100px 100px;
+    background-color: royalblue;
+    position: sticky; 
+    /*relative: */
+    /*페이지에서 위치 고정하고 싶을 때 fixed, sticky
+    fixed: 뷰포트에서 뷰 자체에 대한 요소를 고정
+    sticky: related랑 fixed랑 병행해서 씀/ 같이 drag하다가 뷰포트가 넘어가면 고정이 됨
+    */
+    top:0px;
+}
+
+div{
+    position: relative;
+    left: 50px;
+    top: 100px;
+    background-color: azure;
+}

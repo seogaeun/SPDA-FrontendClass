@@ -1,0 +1,10 @@
+div{
+    width: 700px;
+    height: 1000px;
+    background-image: url('https://www.chemicalnews.co.kr/news/photo/202106/3636_10174_4958.jpg');
+    background-repeat: no-repeat;
+    position: 30px 100px;
+    background-size: 100px;
+    overflow:scroll;
+    background-attachment: fixed; /*이미지 고정됨*/
+}

@@ -1,0 +1,43 @@
+.bg{
+    width: 800px;
+    height: 1000px;
+    background-color: lightsteelblue;
+    border:1px solid silver;
+    position: relative;
+    top:400px;
+    left: 100px;
+}
+
+.a1,  .a2, .a3{
+    width: 100px;
+    height: 100px;
+
+}
+
+.a1{
+    position: relative; /*객체 위치 기준 얼만큼 움직이냐(상대적)*/
+    /*내가 배치한 곳부터~*/
+    /*포지션을 relative로 설정해야 top left 설정 가능*/
+    background-color: salmon;
+    top: -20px; /*위에서 만큼 얼마나 떨어져? 
+                top,left자료 없이 그냥 배치된것=>static*/
+    left: -20px; /*왼쪽에서 얼마나 떨어져? */
+    
+}
+
+.a2{
+    position: absolute;/*부모의 위치*/
+    top: -100px; /*위에서 만큼 얼마나 떨어져?
+    /*꼭짓점 기준*/ 
+    /*top,left자료 없이 그냥 배치된것=>static*/
+    left: -40px; /*왼쪽에서 얼마나 떨어져? */
+    background-color: blueviolet;
+}
+
+.a3{
+    top: 30px; /*위에서 만큼 얼마나 떨어져? 
+    top,left자료 없이 그냥 배치된것=>static*/
+    left: 100px; /*왼쪽에서 얼마나 떨어져? */
+    position: relative;
+    background-color: lightseagreen;
+}

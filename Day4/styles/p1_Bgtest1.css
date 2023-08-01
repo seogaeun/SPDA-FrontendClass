@@ -1,0 +1,11 @@
+div{
+    width: 1000px;
+    height: 1000px;
+    border:1px solid black;
+    background-image: url('https://www.chemicalnews.co.kr/news/photo/202106/3636_10174_4958.jpg');
+    background-repeat: no-repeat; /*이거 안써주면 기본이 바둑판식 배열*/
+    /*background-position: 50% 50%; /*배경 위치 조절 x,y순서로*/
+    background-position: center;
+    /*background-size: 300px; */
+    background-size: contain; /*cover- ,contain- */
+}
