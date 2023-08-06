@@ -1,0 +1,16 @@
+body{
+    background-color: silver;
+}
+div{
+    border:3px solid purple;
+}
+
+@media print{
+    div{
+        color:purple;
+    }
+
+}
+
+@import url("print.css") screen;
+@import url("screen.css") print;
