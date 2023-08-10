@@ -1,0 +1,26 @@
+
+.acordian{
+    background-color: skyblue;
+    border: none;
+    width: 97vw;
+    height: 5vh;
+    cursor:pointer;   
+}
+
+.active, .acordian:hover{
+    background-color: blue;
+    color:white;
+}
+
+.pannel{
+    width: 97vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 1vh;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.p{
+    text-align: center;
+}
